@@ -20,12 +20,18 @@
 }
 
 body{
+    display: block;
     font-size: var(--cuerpo-texto);
     padding: 10px;
+    background-color: var(--gris-claro)
 }
 header {
     background-color: var(--amarillo);
     font-family: 'roboto';
+}
+
+img{
+    width: 100%;
 }
 
 .logo{
@@ -75,10 +81,13 @@ nav .navBar {
     padding: 0;
 }
 
+.imagen {
+    width: 100%;
+}
+
 main {
-    display: block;
-    background-color: var(--gris-oscuro);
-    padding: 10px;
+    width: 90%;
+    margin: 20px;;
 }
 
 
@@ -99,7 +108,7 @@ main {
 
 .card-description {
     background-color: white;
-    border-top: 1px solid var(--gris-claro);
+    border-top: 1px solid var(--gris-oscuro);
     padding: 15px;
     text-align: left;
 }
