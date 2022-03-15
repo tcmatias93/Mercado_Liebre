@@ -21,45 +21,55 @@
 
 body{
     display: block;
+    font-family: 'Roboto';
     font-size: var(--cuerpo-texto);
-    padding: 10px;
     background-color: var(--gris-claro)
 }
+
 header {
     background-color: var(--amarillo);
     font-family: 'roboto';
+    padding: 10px;
 }
 
-img{
-    width: 100%;
+.header-top {
+    display: flex;
+    flex-grow: 1;
 }
 
-.logo{
-    width: 50%;
+.logo {
+    width: 50%; 
     margin: 10px;
 }
 
-.buscador{
-    margin: 15px;
-}
-
-.comprar-cuotas {
+.search {
+    width: 50%;
+    margin: 10px;
     text-align: center;
-    margin-bottom: 10px;
+    align-self: center;    
 }
 
-.navegador {
+.compra-cuotas {
+    text-align: center;
+    margin-top: 10px 0 10px 0;
+    padding: 10px;
+}
+
+.navegador{
     display: none;
 }
 
-nav .navBar {
-    margin-bottom: 20px;
+.navegador ul {
+    list-style: none;
 }
 
-.burgerBoton {
-    display: block;
+.navegador ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.burgerBoton{
     background-color: var(--azul);
-    color: white;
     max-width: 40px;
     border-radius: 5px;
     text-align: center;
@@ -68,65 +78,42 @@ nav .navBar {
     padding: 10px 0px;
 }
 
-.navegador > ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.burgerBoton a i {
+    color: white;
 }
 
-.navegador > ul > li > a {
-    text-decoration: none;
-    color: black;
-    margin: 0;
-    padding: 0;
-}
-
-.imagen {
+.banner img {
     width: 100%;
 }
 
-main {
+main{
     width: 90%;
-    margin: 20px;;
 }
 
-
-
-.titulos {
+.titulo {
     font-size: var(--titulares);
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+.card{
     margin: 10px;
+    background-color: white;
 }
 
-.card > img {
-    margin-bottom: 0;
+.card img {
+    width: 100%;
 }
 
 .card-description {
-    background-color: white;
-    border-top: 1px solid var(--gris-oscuro);
-    padding: 15px;
-    text-align: left;
+    font-size: var(--descripcion);
+    border-top: 1px solid var(--gris-claro);
+    margin: 15px;
+    position: relative;
 }
 
-.precios {
-    display: flex;
-}
-.precio {
-    display: flex;
-    font-size: var(--precios);
-    flex-grow: 0.30;
-}
-
-.descuento {
+.descuento-bus {
+    color: var(--verde);
     display: block;
     font-size: var(--descuentes);
-    color: var(--verde);
     padding: 5px;
     width: 30px;
     height: 30px;
@@ -138,44 +125,67 @@ main {
     top: -15px;
 }
 
-.descuentos {
-    display: flex;
-    font-size: var(--descuentes);
-    color: var(--verde);
-    flex-grow: 0.70;
+.precio {
+    font-size: var(--precios);
 }
 
-.descripcion {
-    font-size: var(--descuentes);
+.descuentos{
+    color: var(--verde);
+}
+
+.descripcion{
     display: none;
 }
 
-footer article {
-    text-align: center;
-    padding: 10px;
+footer {
+    margin: 5px;
 }
 
-.card-color {
+.footer {
+    text-align: center;
+}
+
+.warranty i {
     font-size: 2rem;
     margin-bottom: 10px;
     color: var(--celeste);
 }
 
+.copyright{
+    margin: 5px;
+}
+
 @media (min-width: 361px) {
-    .descripcion {
+    .burgerBoton{
+        display: none;
+    }
+    .descripcion{
         display: block;
     }
     .card {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-
+    .header-top-tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+    .compra-cuotas{
+        text-align: right;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .navegador {
+        border: dotted 2px red;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navegador ul {
+        display: flex;
+    }
+    .navegador li {
+        margin: 0 5px;
+    }
 }
 
 @media (min-width: 769px) {
-    .navegador {
-        display: block;
-    }
-    .burgerBoton {
-        display: none;
-    }
 }
