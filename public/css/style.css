@@ -97,7 +97,8 @@ main {
 }
 
 .card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     margin: 10px;
 }
@@ -113,13 +114,35 @@ main {
     text-align: left;
 }
 
+.precios {
+    display: flex;
+}
 .precio {
+    display: flex;
     font-size: var(--precios);
+    flex-grow: 0.30;
+}
+
+.descuento {
+    display: block;
+    font-size: var(--descuentes);
+    color: var(--verde);
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 .descuentos {
+    display: flex;
     font-size: var(--descuentes);
     color: var(--verde);
+    flex-grow: 0.70;
 }
 
 .descripcion {
