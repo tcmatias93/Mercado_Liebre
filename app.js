@@ -13,3 +13,13 @@ app.get('/', function(req, res) {
     let html = path.resolve(publicPath + '/views/index.html')
     res.sendFile(html)
 })
+
+app.get('/register.html', function(req, res) {
+    let register = path.resolve(publicPath + '/views/register.html')
+    res.sendFile(register)
+})
+
+app.get('/login.html', function(req, res) {
+    let login = path.resolve(publicPath + '/views/login.html')
+    res.sendFile(login)
+})
