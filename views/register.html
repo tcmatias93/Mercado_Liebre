@@ -53,15 +53,15 @@
     </header>
 
     <main class="register">
-        <form action="register" method="get">
+        <form action="/" method="get">
             <div class="form-container">
                 <label for="nombre-apellido">Nombre y apellido</label>
-                <input type="text" name="nombre-apellido" id="nombre-apellido">
+                <input type="text" name="nombre-apellido" id="nombre-apellido" required>
             </div>
 
             <div class="form-container">
                 <label for="usuario">Nombre de usuario</label>
-                <input type="text" name="usuario" id="usuario">
+                <input type="text" name="usuario" id="usuario" minlength="4" required>
             </div>
 
             <div class="calendar">
@@ -72,10 +72,14 @@
             <div class="user">
                 <label for="perfil-usuario">Perfil del usuario</label>
                 <div class="user-option">
-                    <label for="comprador">Comprador</label>
-                    <input type="checkbox" name="Comprador" value="comprador">
-                    <label for="vendedor">Vendedor</label>
-                    <input type="checkbox" name="Vendedor" value="vendedor">
+                    <div>
+                        <label for="comprador">Comprador</label>
+                        <input type="radio" name="Comprador" value="comprador">
+                    </div>
+                    <div>
+                        <label for="vendedor">Vendedor</label>
+                        <input type="radio" name="Vendedor" value="vendedor">
+                    </div>
                 </div>
             </div>
 
@@ -112,16 +116,16 @@
 
             <div class="form-container">
                 <labal>Contraseña</labal>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" minlength="8" required>
             </div>
 
             <div class="form-container">
                 <labal>Confirmar contraseña</labal>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" minlength="8" required>
             </div>
             
             <div>
-                <button type="submit" class="button">Enviar</button>
+                <button type="submit" class="button"><a href="index"></a> Enviar</button>
                 <button type="reset" class="button">Borrar</button>
             </div>
         </form>
