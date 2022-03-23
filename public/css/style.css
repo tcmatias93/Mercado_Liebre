@@ -134,6 +134,10 @@ footer {
     background-color: white;
 }
 
+.card:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 .card img {
     width: 100%;
 }
@@ -160,6 +164,13 @@ footer {
     top: -15px;
 }
 
+.card-description i {
+    transition: 400ms;
+}
+.card:hover .card-description  i {
+    transform: rotate(-90deg)
+}
+
 .card-description-price {
     display: flex;
     margin: 10px 0 ;
@@ -174,8 +185,13 @@ footer {
     flex-grow: 0.7;
 }
 
+.card:hover .card-description .card-description-price  .descripcion {
+    display: block;
+}
+
 .descripcion {
     display: none;
+    transition: 350ms;
 }
 
 /* estilos en la pagina de register.html */
@@ -188,7 +204,7 @@ footer {
 }
 
 .form-container{
-    /* border: 1px solid red; */
+
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -266,16 +282,19 @@ footer {
     color: #fff;
     background-color: var(--celeste);
     border: 1px solid var(--azul);
+    transition: 350ms;
 }
-
+.boton-envio:hover{
+    background-color: #0022AA;
+}
 @media (min-width: 361px) {
     .burgerBoton{
         display: none;
     }
     .descripcion{
-        display: block;
+        display: none;
     }
-    .card {
+    .card:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .logo, .search, .compra-cuotas {
@@ -332,5 +351,12 @@ footer {
     }
     .card{
         max-width: 22%;
+    }
+    .footer {
+        display: flex;
+        padding: 10px 0;
+    }
+    .warranty i:hover {
+        color: #03264C;
     }
 }
