@@ -1,6 +1,5 @@
 /* estilos para el main en mobil */
 .register {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,4 +63,19 @@ form .user:hover input {
 
 .button:hover {
   background-color: #0022AA;
+}
+
+@media (min-width:361px) {
+  .register {
+    width: 50%;
+  }
+  .user {
+    margin: 15px 0px;
+  }
+  .password1 {
+    margin: 15px 0px;
+  }
+  .button {
+    margin-top: 20px;
+  }
 }

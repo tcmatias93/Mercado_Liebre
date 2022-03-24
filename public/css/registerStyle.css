@@ -1,0 +1,131 @@
+/* estilos para el main en mobil */
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 10% auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+  background-color: #fff;
+  width: 80%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.form-container:hover {
+  border: 1px solid rgb(102, 102, 189)
+}
+
+form .form-container:hover input {
+  border-bottom: 1px solid rgb(102, 103, 190);
+}
+
+form div input {
+  width: 90%;
+  border: none;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 10% auto;
+}
+
+.calendar input {
+  font-size: 18px;
+  text-align: center;
+  background-color: #ebebeb;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 10% auto;
+}
+
+.user-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.user-option div {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 10% auto;
+}
+
+.category-select {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.category-select-item {
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.category-select-item label {
+  width: 40%;
+}
+.category-select-item input {
+  width: 40%;
+  align-items: flex-start;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 10% auto;
+}
+
+.avatar input {
+  margin-top: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #1259c3;
+  font-size: 1rem;
+}
+
+.button-enviar:hover {
+  background-color: #0022AA;
+}
+
+.button-borrar:hover {
+  background-color: red;
+}
+
+
+@media (min-width:361px) {
+  .register {
+    width: 50%;
+}
+}
