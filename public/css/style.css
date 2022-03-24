@@ -182,6 +182,9 @@ footer {
   color: #1259c3;
 }
 
+.card-color:hover {
+  color: #38598b;
+}
 
 @media (min-width: 361px){
   /* estilos para el header de tables a destock */

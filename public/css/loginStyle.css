@@ -1,0 +1,67 @@
+/* estilos para el main en mobil */
+.register {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 10% auto;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+  background-color: #fff;
+  width: 80%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.password1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0;
+  background-color: #fff;
+  width: 80%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+form div input {
+  width: 90%;
+  border: none;
+}
+
+.user:hover {
+  border: 1px solid rgb(102, 102, 189)
+}
+
+form .user:hover input {
+  border-bottom: 1px solid rgb(102, 103, 190);
+}
+
+
+
+.password1:hover {
+  border: 1px solid rgb(102, 102, 189)
+}
+
+.password1:hover input {
+  border-bottom: 1px solid rgb(102, 103, 190);
+}
+
+.button {
+  width: 80%;
+  padding: 10px 0;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #1259c3;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #0022AA;
+}
