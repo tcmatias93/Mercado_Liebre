@@ -1,0 +1,258 @@
+/* Estilos generales para todo el proyecto */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p{
+  font-size: 12px;
+}
+
+/* estilos del header para mobil */
+
+header{
+  background-color: #eac926;
+}
+
+.header-top {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.compra-cuotas {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.logo{
+  width: 45%;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  font-size: 11px;
+  width: 55%;
+}
+.search form {
+  display: flex;
+}
+
+.navegador {
+  display: none;
+}
+
+.burgerBoton{
+  text-align: center;
+}
+
+.burgerBoton i {
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  width: 40px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* estilos del main para mobil */
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.titulo {
+  margin: 20px 0px;
+  color: #666;
+}
+
+.card {
+  background-color: #fff;
+  margin: 10px 0px;
+  transition:400ms;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.card .descuento-bus {
+  transition:400ms;
+}
+.card:hover .descuento-bus {
+  transform: rotate(-90deg);
+}
+
+.card .descripcion{
+  transition: all 500ms;
+}
+
+.card:hover .descripcion {
+  display: block;
+}
+.card img {
+  width: 100%;
+}
+
+.descuento-bus, .descuentos {
+  color: #39b54a;
+}
+
+.descuento-bus {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.card-description {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+  padding: 15px;
+}
+
+.precio {
+  font-size: 18px;
+  width: 30%;
+}
+.descuentos {
+  width: 70%;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.descripcion {
+  display: none;
+}
+
+/* a partir de aca se da el diseño del footer para mobil */
+
+footer {
+  margin: 10px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.warranty {
+  margin: 10px 0px;
+}
+
+.card-color {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1259c3;
+}
+
+
+@media (min-width: 361px){
+  /* estilos para el header de tables a destock */
+  .logo{
+    width: 30%;
+  }
+  .search{
+    width: 30%;
+  }
+  .compra-cuotas{
+    width: 30%;
+  }
+
+  .burgerBoton{
+    display: none;
+  }
+
+  .navegador {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navegador ul {
+    display: flex;
+    width: 40%;
+    text-decoration: none;
+    justify-content: space-around;
+  }
+
+  .navegador ul li {
+    list-style-type: none;
+    display: flex;
+    margin: 3px;
+  }
+
+  .navegador ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  /* estilos del main para tablet */
+
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 40%;
+  }
+
+  .precio {
+    width: 55%;
+  }
+
+  .descuentos{
+    width: 45%;
+  }
+}
+@media (min-width: 769px){
+  /* estilos del main para destock */
+  .card {
+    width: 22%;
+  }
+
+  /* estilos del footer para destock */
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
